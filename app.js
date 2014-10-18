@@ -24,7 +24,7 @@ app.get(/\.html$/, function (req, res) {
   });
 });
 
-Console.log("Listening on port: ", port)
+console.log("Listening on port: ", port)
 app.listen(port);
 
 
