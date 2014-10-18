@@ -11,9 +11,9 @@ module.exports = function (grunt) {
     watch: {
       live: {
         options: {
-          livereload: true
+          livereload: 13337
         },
-        files  : ['public/js/**/*.js', 'public/css/*', 'public/views/**/*', 'public/translation/*']
+        files  : ['public/js/**/*.js', 'public/css/*', 'public/*.jade', 'public/views*.jade', 'public/translation/*']
       },
       css : {
         files: ['less/*.less'],
@@ -36,5 +36,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   // Creates the `server` task
-  grunt.registerTask('snowshoe', ['watch:live', 'watch:css']);
+  grunt.registerTask('snow', ['watch:live']);
+  grunt.registerTask('shoe', ['watch:css']);
 };

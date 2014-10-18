@@ -1,3 +1,33 @@
-body {
+@import "scheme.less";
+
+html, body {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica';
+  height: 100%;
+  min-height: 100%;
 }
+
+.background {
+  z-index: -1;
+  position: fixed;
+  left: @d3;
+  top: @d3;
+  right: @d3;
+  bottom: @d3;
+
+  background: url('/img/snow.jpg');
+  background-size: cover;
+}
+
+.container.frame {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background: @bg;
+}
+
+.header {
+  background: @header;
+}
+
