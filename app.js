@@ -1,6 +1,7 @@
 var express = require('express'),
-  app = express();
-path = require('path');
+  port = 1337,
+  app = express(),
+  path = require('path');
 
 app.engine('jade', require('jade').__express);
 app.set('views', path.resolve(__dirname, 'public'));
@@ -23,6 +24,7 @@ app.get(/\.html$/, function (req, res) {
   });
 });
 
-app.listen(80);
+Console.log("Listening on port: ", port)
+app.listen(port);
 
 
