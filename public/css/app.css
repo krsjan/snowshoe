@@ -1,0 +1,28 @@
+/* distances - margins & paddings */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica';
+  height: 100%;
+  min-height: 100%;
+}
+.background {
+  z-index: -1;
+  position: fixed;
+  left: 16px;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: url('/img/snow.jpg');
+  background-size: cover;
+}
+.container.frame {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background: #f2ebc7;
+}
+.header {
+  background: #3e606f;
+}
