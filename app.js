@@ -3,7 +3,6 @@ var express = require('express'),
   app = express(),
   path = require('path');
 
-app.engine('jade', require('jade').__express);
 app.set('views', path.resolve(__dirname, 'public'));
 
 app.use(express.static(path.resolve(__dirname, 'public')));
