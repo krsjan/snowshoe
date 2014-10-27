@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 80%;
   margin: 0 auto;
   text-align: center;
 }
@@ -33,63 +33,14 @@ body {
   padding: 20px 0;
 }
 
-
-img {
-  position: relative;
-  z-index: 0;
-  margin: -10% 0;
-  max-width: 100%;
-}
-
-h1, h2, h3 {
-  color: @text-heading;
-}
-
-small {
-  color: @text-small;
-}
-
-.dark-button {
-  padding: @d0;
-  background: @header;
-  border-radius: @d1;
-  margin-left: @d3;
-}
-
-.wrapper {
-  padding: 40px;
-  background: white;
-}
-
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-
-.main-padding {
-  padding: @d3 @d4;
-}
-
-.full-page {
-  height: 100%;
-  min-height: 100%;
-}
-
-.seperator {
-  background: @seperator;
-  padding: @d4;
-  color: @text-main;
-}
-
-blockquote {
-  border-left: @d2 solid @text-main;
-  padding-left: @d3;
-}
-
-.header {
-  h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+#player, #opponent {
+  border: @border-properties;
+  border-spacing: 0;
+  td {
+    &:first-child {
+      border-left: 0px solid;
+    }
+    padding: 10px;
+    border-left: @border-properties;
   }
-  padding: @d3;
-//  background: @header;
 }

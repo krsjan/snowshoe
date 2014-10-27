@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'sans-serif';
 }
 .container {
-  max-width: 1024px;
+  max-width: 80%;
   margin: 0 auto;
   text-align: center;
 }
@@ -23,58 +23,17 @@ body {
 #game {
   padding: 20px 0;
 }
-img {
-  position: relative;
-  z-index: 0;
-  margin: -10% 0;
-  max-width: 100%;
+#player,
+#opponent {
+  border: 1px solid #3e606f;
+  border-spacing: 0;
 }
-h1,
-h2,
-h3 {
-  color: #ffffff;
+#player td,
+#opponent td {
+  padding: 10px;
+  border-left: 1px solid #3e606f;
 }
-small {
-  color: #cccccc;
-}
-.dark-button {
-  padding: 2px;
-  background: #3e606f;
-  border-radius: 4px;
-  margin-left: 16px;
-}
-.wrapper {
-  padding: 40px;
-  background: white;
-}
-.img-responsive {
-  width: 100%;
-  height: auto;
-}
-.main-padding {
-  padding: 16px 32px;
-}
-.full-page {
-  height: 100%;
-  min-height: 100%;
-}
-.seperator {
-  background: #962d3e;
-  padding: 32px;
-  color: #ffffff;
-}
-blockquote {
-  border-left: 8px solid #ffffff;
-  padding-left: 16px;
-}
-.header {
-  padding: 16px;
-}
-.header h1,
-.header h2,
-.header h3,
-.header h4,
-.header h5,
-.header h6 {
-  margin: 0;
+#player td:first-child,
+#opponent td:first-child {
+  border-left: 0px solid;
 }
