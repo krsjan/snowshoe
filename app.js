@@ -3,7 +3,7 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');
-var chargenerator = require('module/charcode-generator');
+var chargenerator = require('./module/charcode-generator.js');
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 
