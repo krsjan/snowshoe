@@ -1,1 +1,1 @@
-snowshoe keeps you on top.
+snowshoe keeps you on top.### Global dependencies* [supervisor](https://www.npmjs.org/package/supervisor)
