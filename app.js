@@ -3,10 +3,9 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var path = require('path');
-var chargenerator = require('./module/charcode-generator.js');
+var createid = require('./module/id-generator.js');
 
 app.use(express.static(path.resolve(__dirname, 'public')));
-
 
 app.get('/', function(req, res){
   res.sendfile('public/index.html');
@@ -14,10 +13,14 @@ app.get('/', function(req, res){
 
 io.on('connection', function(socket){
 
-    socket.on('game:start', function (data, ack){
-        console.log(data);
-        console.log(ack);
-    });
+  socket.emit('game:connection', { id: createid() });
+
+  socket.on('game:start', function (data, ack){
+    if (data) {
+      ack(true);
+      startGame();
+    }
+  });
 });
 
 http.listen(3000, function(){
