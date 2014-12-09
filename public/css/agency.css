@@ -298,9 +298,18 @@ header {
     -o-background-size: cover;
 }
 
+#snowshoe {
+    background-image: url(../img/header-snow.jpg);
+}
+
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    text-shadow:
+    -1px -1px 0 rgba(0,0,0, 0.1),
+    1px -1px 0 rgba(0,0,0, 0.1),
+    -1px 1px 0 rgba(0,0,0, 0.1),
+    1px 1px 0 rgba(0,0,0, 0.1);
 }
 
 header .intro-text .intro-lead-in {
