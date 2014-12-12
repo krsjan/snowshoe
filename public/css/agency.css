@@ -141,6 +141,72 @@ fieldset[disabled] .btn-primary.active {
   background-color: #B8E986;
 }
 
+.btn-xl-private {
+  padding: 20px 40px;
+  border-color: #B8E986;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #B8E986;
+}
+
+.btn-xl-private:hover,
+.btn-xl-private:focus,
+.btn-xl-private:active,
+.btn-xl-private.active,
+.open .dropdown-toggle.btn-xl-private {
+  border-color: #569918;
+  color: #fff;
+  background-color: #759b52;
+}
+
+.btn-xl-designers {
+  padding: 20px 40px;
+  border-color: #be4728;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ED5932;
+}
+
+.btn-xl-designers:hover,
+.btn-xl-designers:focus,
+.btn-xl-designers:active,
+.btn-xl-designers.active,
+.open .dropdown-toggle.btn-xl-designers {
+  border-color: #a53d22;
+  color: #fff;
+  background-color: #C44929;
+}
+
+.btn-xl-firms {
+  padding: 20px 40px;
+  border-color: #2f79e2;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #4A90E2;
+}
+
+.btn-xl-firms:hover,
+.btn-xl-firms:focus,
+.btn-xl-firms:active,
+.btn-xl-firms.active,
+.open .dropdown-toggle.btn-xl-firms {
+  color: #fff;
+  border-color: #195193;
+  background-color: #3C75B8;
+}
+
 .btn-xl:hover,
 .btn-xl:focus,
 .btn-xl:active,
@@ -302,6 +368,10 @@ header {
 
 #snowshoe {
   background-image: url(../img/header-snow.jpg);
+}
+
+#in-progress {
+  background-image: url(../img/project.jpg);
 }
 
 header .intro-text {
@@ -680,9 +750,11 @@ section h3.section-subheading {
   margin-top: 25px;
   margin-bottom: 8px;
 }
+
 .team-member a {
   text-align: center;
 }
+
 .team-member p {
   margin-top: 0;
 }
