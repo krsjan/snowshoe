@@ -362,17 +362,29 @@ header {
   -o-background-size: cover;
 }
 
+
 #plint {
   background-image: url(../img/header-plint.jpg);
 }
 
-#plint-all {
-  background-image: url(../img/header-plint-all-3.jpg);
+#plint-all, #firms, #for-you, #designers {
   color: #222;
 }
 
-#snowshoe {
-  background-image: url(../img/header-snow.jpg);
+#plint-all {
+  background-image: url(../img/header-plint-all-3.jpg);
+}
+
+#firms {
+  background-image: url(../img/products/business-hovedbilde.jpg);
+}
+
+#for-you {
+  background-image: url(../img/products/hovedbilde-for-you-ludo.jpg);
+}
+
+#designers {
+  background-image: url(../img/products/hovedbilde-for-designere.jpg);
 }
 
 #in-progress {
@@ -384,7 +396,7 @@ header .intro-text {
   padding-bottom: 50px;
 }
 
-#plint-all .intro-text .intro-lead-in, #plint-all .intro-text .intro-heading {
+#plint-all .intro-text .intro-lead-in, #plint-all .intro-text .intro-heading, #firms .intro-text .intro-lead-in, #firms .intro-text .intro-heading, #for-you .intro-text .intro-lead-in, #for-you .intro-text .intro-heading, #designers .intro-text .intro-lead-in, #designers .intro-text .intro-heading, {
   text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5),
   1px -1px 0 rgba(255, 255, 255, 0.5),
   -1px 1px 0 rgba(255, 255, 255, 0.5),
@@ -483,7 +495,7 @@ section h3.section-subheading {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: rgba(237, 87, 50, .9);
+  background: rgba(100, 68, 141, 0.90);
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
   transition: all ease .5s;

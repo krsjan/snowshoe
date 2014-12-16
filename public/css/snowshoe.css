@@ -362,14 +362,6 @@ header {
   -o-background-size: cover;
 }
 
-#plint {
-  background-image: url(../img/header-plint.jpg);
-}
-
-#plint-all {
-  background-image: url(../img/header-plint-all-3.jpg);
-}
-
 #snowshoe {
   background-image: url(../img/header-snow.jpg);
 }
