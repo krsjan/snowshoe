@@ -352,11 +352,11 @@ fieldset[disabled] .btn-xl.active {
 
 header {
   text-align: center;
-  color: #fff;
+  color: #FFF;
   background-attachment: scroll;
   background-position: center center;
-  background-repeat: none;
-  -webkit-background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
@@ -364,6 +364,10 @@ header {
 
 #plint {
   background-image: url(../img/header-plint.jpg);
+}
+
+#plint-all {
+  background-image: url(../img/header-plint-all-3.jpg);
 }
 
 #snowshoe {
@@ -377,10 +381,6 @@ header {
 header .intro-text {
   padding-top: 100px;
   padding-bottom: 50px;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1),
-  1px -1px 0 rgba(0, 0, 0, 0.1),
-  -1px 1px 0 rgba(0, 0, 0, 0.1),
-  1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 header .intro-text .intro-lead-in {
@@ -389,6 +389,10 @@ header .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1),
+  1px -1px 0 rgba(0, 0, 0, 0.1),
+  -1px 1px 0 rgba(0, 0, 0, 0.1),
+  1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 header .intro-text .intro-heading {
@@ -398,6 +402,10 @@ header .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.1),
+  1px -1px 0 rgba(0, 0, 0, 0.1),
+  -1px 1px 0 rgba(0, 0, 0, 0.1),
+  1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px) {
@@ -973,6 +981,10 @@ img::-moz-selection {
 
 .xs-top {
   margin-top: 32px;
+}
+
+.white {
+  color: white;
 }
 
 body {
