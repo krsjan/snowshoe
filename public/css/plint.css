@@ -396,11 +396,11 @@ header .intro-text {
   padding-bottom: 50px;
 }
 
-#plint-all .intro-text .intro-lead-in, #plint-all .intro-text .intro-heading, #firms .intro-text .intro-lead-in, #firms .intro-text .intro-heading, #for-you .intro-text .intro-lead-in, #for-you .intro-text .intro-heading, #designers .intro-text .intro-lead-in, #designers .intro-text .intro-heading, {
-  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5),
-  1px -1px 0 rgba(255, 255, 255, 0.5),
-  -1px 1px 0 rgba(255, 255, 255, 0.5),
-  1px 1px 0 rgba(255, 255, 255, 0.5);
+#plint-all .intro-text .intro-lead-in, #plint-all .intro-text .intro-heading, #firms .intro-text .intro-lead-in, #firms .intro-text .intro-heading, #for-you .intro-text .intro-lead-in, #for-you .intro-text .intro-heading, #designers .intro-text .intro-lead-in, #designers .intro-text .intro-heading {
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 1),
+  1px -1px 0 rgba(255, 255, 255, 1),
+  -1px 1px 0 rgba(255, 255, 255, 1),
+  1px 1px 0 rgba(255, 255, 255, 1);
 }
 
 header .intro-text .intro-lead-in {
