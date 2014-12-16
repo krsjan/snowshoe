@@ -31,18 +31,24 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script>     (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o), m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-57719884-1', 'auto');
-  ga('send', 'pageview');    </script>
+
+  <script>
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-57719884-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -93,10 +99,12 @@
       <div class="intro-lead-in">We are currently testing the concept</div>
       <div class="intro-heading">Do you love it?</div>
       <div class="col-sm-4 col-sm-offset-2">
-        <a href="stop-plinting.html" onClick="ga('send', 'Interest', 'Dislike', 'Plint');" class="page-scroll btn btn-xl-designers">No, stop plinting!</a>
+        <a href="stop-plinting.html" onClick="_gaq.push(['_trackEvent', 'Interest', 'Dislike', 'Plint']);"
+           class="page-scroll btn btn-xl-designers">No, stop plinting!</a>
       </div>
       <div class="col-sm-4">
-        <a href="#survey" onClick="ga('send', 'Interest', 'Like', 'Plint');" class="page-scroll btn btn-xl-success">Yes, plint is cool!</a>
+        <a href="#survey" onClick="_gaq.push(['_trackEvent', 'Interest', 'Like', 'Plint']);" class="page-scroll btn btn-xl-success">Yes,
+          plint is cool!</a>
       </div>
     </div>
   </div>
